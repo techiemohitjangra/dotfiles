@@ -1,0 +1,7 @@
+0000000000000000000000000000000000000000 22915d6dcc717407f6cd17dc4e817b8c0bd34f0e Mohit Jangra <mohitjangra12@gmail.com> 1705392691 +0530	clone: from https://github.com/techiemohitjangra/nvim-config
+22915d6dcc717407f6cd17dc4e817b8c0bd34f0e 463979464ce3e70b4bc9de68020105f0141d0c6d Mohit Jangra <mohitjangra12@gmail.com> 1705393155 +0530	commit: Update: disabled lazy loading for cloak.nvim
+463979464ce3e70b4bc9de68020105f0141d0c6d d72db858699cc54602eb99b940a0624a607429ac Mohit Jangra <mohitjangra12@gmail.com> 1705670287 +0530	commit: Update: dictionary updated
+d72db858699cc54602eb99b940a0624a607429ac 17313bfec25b189d5dcbc85b84dd382afc50d9e4 Mohit Jangra <mohitjangra12@gmail.com> 1706178660 +0530	commit: Update: removed pyright from ensure_installed in lsp_mason.lua
+17313bfec25b189d5dcbc85b84dd382afc50d9e4 b60843ccaeb4a9e10f6097f081b7fc848316de0f Mohit Jangra <mohitjangra12@gmail.com> 1706178690 +0530	commit: Update: disabled lazy loading for undotree
+b60843ccaeb4a9e10f6097f081b7fc848316de0f b965411e836e85a1d80de0b3851230d843247dd5 Mohit Jangra <mohitjangra12@gmail.com> 1706178754 +0530	commit: Update: moved undotree keymap to undotree.lua
+b965411e836e85a1d80de0b3851230d843247dd5 d30d9e2894e8fd13af4eed3a472a5283332dfac1 Mohit Jangra <mohitjangra12@gmail.com> 1706178775 +0530	commit: Update: updated personal dictionary

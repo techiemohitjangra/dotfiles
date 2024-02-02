@@ -1,0 +1,16 @@
+return {}
+-- auto pair
+-- return {
+--     'windwp/nvim-autopairs',
+--     dependencies = {
+--     },
+--     config = function()
+--         require('nvim-autopairs').setup()
+--         local cmp_autopair = require('nvim-autopair.completion.cmp')
+--         local cmp = require('cmp')
+--         cmp.event:on(
+--         'confirm_done',
+--         cmp_autopair.on_confirm_done()
+--         )
+--     end
+-- },

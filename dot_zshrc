@@ -115,6 +115,7 @@ bindkey -v
 export PATH=$HOME/.local/go/bin:$PATH
 export PATH=/opt/neovim/bin:$PATH
 export PATH=/opt/GameMaker-Beta:$PATH
+export PATH=$HOME/.local/bin:$PATH
 
 # Golang
 export GOPATH=~/.local/go

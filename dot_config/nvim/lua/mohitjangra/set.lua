@@ -56,7 +56,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 
 
 -- remove trailing white space on save
-vim.api.nvim_create_autocmd({"BufWritePre"}, {
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
     group = MohitJangraGroup,
     pattern = "*",
     command = [[%s/\s\+$//e]],

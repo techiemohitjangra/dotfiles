@@ -5,3 +5,6 @@ d72db858699cc54602eb99b940a0624a607429ac 17313bfec25b189d5dcbc85b84dd382afc50d9e
 17313bfec25b189d5dcbc85b84dd382afc50d9e4 b60843ccaeb4a9e10f6097f081b7fc848316de0f Mohit Jangra <mohitjangra12@gmail.com> 1706178690 +0530	commit: Update: disabled lazy loading for undotree
 b60843ccaeb4a9e10f6097f081b7fc848316de0f b965411e836e85a1d80de0b3851230d843247dd5 Mohit Jangra <mohitjangra12@gmail.com> 1706178754 +0530	commit: Update: moved undotree keymap to undotree.lua
 b965411e836e85a1d80de0b3851230d843247dd5 d30d9e2894e8fd13af4eed3a472a5283332dfac1 Mohit Jangra <mohitjangra12@gmail.com> 1706178775 +0530	commit: Update: updated personal dictionary
+d30d9e2894e8fd13af4eed3a472a5283332dfac1 d30d9e2894e8fd13af4eed3a472a5283332dfac1 Mohit Jangra <mohitjangra12@gmail.com> 1707098173 +0530	reset: moving to HEAD
+d30d9e2894e8fd13af4eed3a472a5283332dfac1 a8f3535e97c4b5b049ede0eeaefee2ba06471b17 Mohit Jangra <mohitjangra12@gmail.com> 1707098180 +0530	pull: Fast-forward
+a8f3535e97c4b5b049ede0eeaefee2ba06471b17 af95747326ce7598ac379c3101f6855872fd150e Mohit Jangra <mohitjangra12@gmail.com> 1707098247 +0530	commit: dictionary update

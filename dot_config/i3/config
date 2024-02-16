@@ -32,7 +32,7 @@ bindsym mod4+s [title="^Sup ::"] scratchpad show
 
 # assigning displays to workspaces
 workspace 1 output DP-2
-workspace 2 output eDP-1
+# workspace 2 output eDP-1
 
 # config i3 to use gnome dark mode settings
 # exec --no-startup-id /usr/libexec/gsd-xsettings

@@ -137,3 +137,6 @@ alias cat=batcat
 # Cursor Theme
 
 export XCURSOR_THEME=breeze_cursor_theme
+
+
+export GPG_TTY=$(tty)

@@ -16,18 +16,17 @@ return {
         require("mason").setup()
         require("mason-lspconfig").setup({
             ensure_installed = {
-                "tsserver",
                 "clangd",
                 "gopls",
-                "rust_analyzer",
                 "lua_ls",
+                "pylsp",
             },
             handlers = {
                 -- default handler (optional)
                 -- default settings for rest of the lsp
                 function(server_name)
                     require("lspconfig")[server_name].setup({
-                        capabilities = capabilities
+                        capabilities = capabilities,
                     })
                 end,
                 -- customization for lua lsp
@@ -60,8 +59,7 @@ return {
                             },
                         },
                     })
-                end
-
+                end,
             },
         })
 
@@ -75,7 +73,7 @@ return {
                     { desc = '[G]oto [D]eclaration', buffer = ev.buf, remap = false })
                 vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end,
                     { desc = 'Hover Documentaion', buffer = ev.buf, remap = false })
-                vim.keymap.set("n", "F", require("telescope.builtin").spell_suggest,
+                vim.keymap.set("n", "<leader>F", require("telescope.builtin").spell_suggest,
                     { desc = 'Spelling Suggestions', buffer = ev.buf, remap = false })
                 vim.keymap.set("n", "<leader>vws", vim.lsp.buf.workspace_symbol,
                     { desc = '[W]orkspace [S]ymbols', buffer = ev.buf, remap = false })

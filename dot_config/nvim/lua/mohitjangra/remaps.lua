@@ -69,8 +69,3 @@ vim.keymap.set("n", "<leader>X", "<cmd>!chmod +x %<CR>", { silent = true })
 
 -- jump to packer.lua file
 vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.config/nvim/lua/mohitjangra/plugins/<CR>");
-
--- source current file (over ridden by []Find Existing Buffer from telescope)
-vim.keymap.set("n", "<leader><leader>", function()
-    vim.cmd("so %")
-end)

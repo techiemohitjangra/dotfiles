@@ -254,12 +254,28 @@ exec --no-startup-id picom -CGb && disown
 exec --no-startup-id playerctld daemon && disown
 
 # screenshot
-bindsym Print exec gnome-screenshot -i
+# screenshot entire and all screens
+bindsym Print exec gnome-screenshot
+# screenshot selected area
 bindsym $mod+Print exec gnome-screenshot -a
+# screenshot selected area and save to clipboard
+bindsym $mod+Control+Print exec gnome-screenshot -a -c
+# screenshot selected window
+bindsym $mod+Shift+Print exec gnome-screenshot -w -b
+# screenshot selected window and save to clipboard
+bindsym $mod+Control+Shift+Print exec gnome-screenshot -w -b -c
 
 # colors
 # set title bar color to 34,34,34
 
 # Display wallpaper
-exec_always --no-startup-id feh --cache-size 128 --randomize --auto-reload -. --min-dimension 2560x1440 --bg-fill /home/mohitjangra/Pictures/wallpapers/*
-# exec_always --no-startup-id feh --cache-size 128 --randomize --auto-reload -. --min-dimension 2560x1440 --bg-fill /home/mohitjangra/Pictures/wallpapers/wallapaper_.jpg
+exec_always --no-startup-id feh --cache-size 512 --randomize --auto-reload -. --bg-fill /home/mohitjangra/Pictures/wallpapers/*
+# exec_always --no-startup-id feh --cache-size 512 --randomize --auto-reload -. --bg-max /home/mohitjangra/Pictures/wallpapers/*
+
+
+
+# change caps_lock key behavior to esc
+# xmodmap -e "clear lock"
+# xmodmap -e "keysym Caps_Lock = Escape"
+# set caps_lock as escape
+exec --no-startup-id xmodmap ~/.config/i3/swapkeys -display:0

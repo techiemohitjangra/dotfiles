@@ -1,0 +1,53 @@
+# kitty themes
+[".config/kitty/themes/rosepine"]
+    type = "git-repo"
+    url = "https://github.com/rose-pine/kitty.git"
+    refreshPeriod = "168h"
+[".config/kitty/themes/dracula"]
+    type = "git-repo"
+    url = "https://github.com/dracula/kitty.git"
+    refreshPeriod = "168h"
+
+# neovim config
+[".config/nvim"]
+    type = "git-repo"
+    url = "https://github.com/techiemohitjangra/nvim-config.git"
+
+# tmux plugin manager
+[".config/tmux/plugins/tpm"]
+    type = "git-repo"
+    url = "https://github.com/tmux-plugins/tpm"
+    refreshPeriod = "168h"
+    # press prefix+I to install plugins
+
+# oh-my-zsh
+[".oh-my-zsh"]
+    type = "git-repo"
+    url = "https://github.com/ohmyzsh/ohmyzsh.git"
+    exact = true
+    stripComponents = 1
+    refreshPeriod = "168h"
+
+# oh-my-zsh plugins
+[".oh-my-zsh/custom/themes/zsh-autosuggestions"]
+    type = "git-repo"
+    url = "https://github.com/zsh-users/zsh-autosuggestions"
+    exact = true
+    stripComponents = 1
+    refreshPeriod = "168h"
+
+[".oh-my-zsh/custom/themes/zsh-syntax-highlighting"]
+    type = "git-repo"
+    url = "https://github.com/zsh-users/zsh-syntax-highlighting"
+    exact = true
+    stripComponents = 1
+    refreshPeriod = "168h"
+
+[".oh-my-zsh/custom/themes/zsh-completions"]
+    type = "git-repo"
+    url = "https://github.com/zsh-users/zsh-completions.git"
+    exact = true
+    stripComponents = 1
+    refreshPeriod = "168h"
+
+

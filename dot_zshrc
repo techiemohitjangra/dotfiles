@@ -91,7 +91,7 @@ source $ZSH/oh-my-zsh.sh
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
-#   export EDITOR='mvim'
+#   export EDITOR='nvim'
 # fi
 
 # Compilation flags
@@ -107,6 +107,9 @@ export PATH=/opt/neovim/bin:$PATH
 export PATH=/opt/GameMaker-Beta:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=/opt/jetbrains:$PATH
+
+# C/C++ include files
+export C_INCLUDE_PATH=/usr/include:$C_INCLUDE_PATH
 
 # Golang
 export GOPATH=$HOME/go

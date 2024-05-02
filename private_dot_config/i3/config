@@ -269,3 +269,6 @@ exec_always --no-startup-id feh --cache-size 512 --randomize --auto-reload -. --
 
 # change caps_lock key behavior to esc
 exec_always --no-startup-id setxkbmap -option caps:swapescape
+
+# startup discord on boot
+exec --no-startup-id discord --start-minimized

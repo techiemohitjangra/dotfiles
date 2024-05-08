@@ -104,12 +104,14 @@ bindkey -v
 # PATH
 export PATH=$HOME/.local/go/bin:$PATH
 export PATH=/opt/neovim/bin:$PATH
+export PATH=/opt/zig:$PATH
 export PATH=/opt/GameMaker-Beta:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=/opt/jetbrains:$PATH
 
 # C/C++ include files
 export C_INCLUDE_PATH=/usr/include:$C_INCLUDE_PATH
+export LD_LIBRARY_PATH=/usr/include:$LD_LIBRARY_PATH
 
 # Golang
 export GOPATH=$HOME/go

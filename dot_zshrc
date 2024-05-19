@@ -119,6 +119,11 @@ export GOROOT=$HOME/.local/go
 export GOBIN=$HOME/.local/go/bin
 export GOMODCACHE=$HOME/.local/go/pkg/mod
 
+# .NET
+export DOTNET_ROOT=/usr/lub/dotnet
+export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+export PATH=/usr/lib/dotnet:$PATH
+
 # Skia for Aseprite
 export SKIA_DIR=/home/mohitjangra/skia
 export SKIA_LIBRARY_DIR=/home/mohitjangra/skia/out/Release

@@ -7,7 +7,7 @@ crtc 0
 mode 2560x1440
 pos 0x0
 primary
-rate 59.95
+rate 74.97
 output eDP-1
 crtc 1
 mode 1920x1080

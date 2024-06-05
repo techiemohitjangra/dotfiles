@@ -140,3 +140,6 @@ alias fd=fdfind
 export XCURSOR_THEME=breeze_cursor_theme
 
 export GPG_TTY=$(tty)
+
+# mangohud
+export MANGOHUD=1

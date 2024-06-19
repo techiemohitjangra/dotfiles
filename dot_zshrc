@@ -143,3 +143,4 @@ export GPG_TTY=$(tty)
 
 # mangohud
 export MANGOHUD=1
+export MANGOHUD_CONFIG=$HOME/.config/MangoHud/MangoHud.conf

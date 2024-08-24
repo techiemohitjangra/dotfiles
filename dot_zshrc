@@ -111,6 +111,7 @@ export PATH=/opt/jetbrains:$PATH
 
 # C/C++ include files
 export C_INCLUDE_PATH=/usr/include:$C_INCLUDE_PATH
+export CPLUS_INCLUDE_PATH=/usr/include/c++:$CPLUS_INCLUDE_PATH
 export LD_LIBRARY_PATH=/usr/include:$LD_LIBRARY_PATH
 
 # Golang
@@ -142,5 +143,5 @@ export XCURSOR_THEME=breeze_cursor_theme
 export GPG_TTY=$(tty)
 
 # mangohud
-# export MANGOHUD=1
+export MANGOHUD=1
 export MANGOHUD_CONFIG=$HOME/.config/MangoHud/MangoHud.conf

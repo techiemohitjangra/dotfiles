@@ -99,7 +99,7 @@ let g:ycm_clangd_uses_ycmd_caching = 0
 let g:ycm_clangd_binary_path = exepath("clangd")
 
 " Highlight on yank
-let g:highlightedyank_highlight_duration = 50 
+let g:highlightedyank_highlight_duration = 50
 
 " MAPPING ---------------------------------------------------------------- {{{
 let mapleader = " "

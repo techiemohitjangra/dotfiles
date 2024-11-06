@@ -82,8 +82,6 @@ set foldmethod=marker
 call plug#begin('~/.vim/plugged')
 
     Plug 'rose-pine/vim'
-    Plug 'ycm-core/YouCompleteMe'
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'machakann/vim-highlightedyank'
 
 call plug#end()
@@ -91,12 +89,6 @@ call plug#end()
 
 " color scheme
 colorscheme rosepine
-
-" YouCompleteMe setup
-" Let clangd fully control code completion
-let g:ycm_clangd_uses_ycmd_caching = 0
-" Use installed clangd, not YCM-bundled clangd which doesn't get updates.
-let g:ycm_clangd_binary_path = exepath("clangd")
 
 " Highlight on yank
 let g:highlightedyank_highlight_duration = 50

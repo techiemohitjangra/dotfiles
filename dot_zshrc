@@ -108,6 +108,7 @@ export PATH=/opt/zig:$PATH
 export PATH=/opt/GameMaker-Beta:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=/opt/jetbrains:$PATH
+export PATH=$HOME/.local/ghostty:$PATH
 
 # C/C++ include files
 export C_INCLUDE_PATH=/usr/include:$C_INCLUDE_PATH
@@ -145,3 +146,24 @@ export GPG_TTY=$(tty)
 # mangohud
 # export MANGOHUD=1
 export MANGOHUD_CONFIG=$HOME/.config/MangoHud/MangoHud.conf
+
+
+# setting keybind for ts
+run_custom_scirpt(){
+    ~/learning/scripts/ts
+}
+zle -N run_custom_scirpt
+bindkey "^f" run_custom_scirpt
+
+# keybind to search history using fzf
+history_search_fzf(){
+    local cmd
+    cmd=$(history | fzf | sed 's/^[ ]*[0-9]*[ ]*//')
+    if [[ -n "$cmd" ]]; then
+        echo "$cmd"
+        eval "$cmd"
+        zle reset-prompt
+    fi
+}
+zle -N history_search_fzf
+bindkey  "^r" history_search_fzf

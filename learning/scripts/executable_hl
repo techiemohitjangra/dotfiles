@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if [[ "$1" == "" ]]; then
+    echo "Usage: hl PATTERN [FILE]..." >&2
+elif [[ "$2" == "" ]]; then
+    grep -E --color "$1|$" /dev/stdin
+else
+    grep -E --color "$1|$" $2
+fi

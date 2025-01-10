@@ -151,11 +151,17 @@ export MANGOHUD_CONFIG=$HOME/.config/MangoHud/MangoHud.conf
 history_search_fzf(){
     local cmd
     cmd=$(history | fzf | sed 's/^[ ]*[0-9]*[ ]*//')
+    # cmd=$(history | fzf --height=40% --reverse | sed 's/^[ ]*[0-9]*[ ]*//')
+
     if [[ -n "$cmd" ]]; then
-        echo "$cmd"
-        eval "$cmd"
-        zle reset-prompt
+        echo "command: $cmd"
+        # Use a dedicated prompt for confirmation
+        if read -q "confirm?Execute? (y/N): "; then
+            echo    # Add a newline after the prompt
+            eval "$cmd"
+        fi
     fi
+    zle reset-prompt
 }
 zle -N history_search_fzf
 bindkey "^r" history_search_fzf

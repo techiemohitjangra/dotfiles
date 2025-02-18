@@ -88,11 +88,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='nvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='nvim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -103,7 +103,7 @@ bindkey -v
 
 # PATH
 export PATH=$HOME/.local/bin:$PATH
-export PATH=/opt/neovim/bin:$PATH
+export PATH=$HOME/.local/nvim/bin:$PATH
 export PATH=/opt/zig:$PATH
 export PATH=/opt/GameMaker-Beta:$PATH
 export PATH=/opt/jetbrains:$PATH

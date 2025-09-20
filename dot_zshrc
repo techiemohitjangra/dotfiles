@@ -77,8 +77,7 @@ export MANGOHUD_CONFIG=$HOME/.config/MangoHud/MangoHud.conf
 # keybind to search history using fzf
 history_search_fzf(){
     local cmd
-    cmd=$(history | sort -rgb | sed 's/^[ ]*[0-9]*[ ]*//' | fzf )
-    # cmd=$(history | fzf --height=40% --reverse | sed 's/^[ ]*[0-9]*[ ]*//')
+    cmd=$(history | sort -rgb | sed 's/^[ ]*[0-9]*[ ]*//' | fzf --no-sort)
 
     if [[ -n "$cmd" ]]; then
         echo "command: $cmd"
